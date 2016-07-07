@@ -1,0 +1,17 @@
+---
+spring:
+  profiles: default
+  application:
+    name: offers
+  cloud:
+    config:
+      uri: http://localhost:8001/
+
+---
+spring:
+  profiles: cloud
+  application:
+    name: offers
+  cloud:
+    config:
+      uri: http://configuration:8001/
